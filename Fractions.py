@@ -21,9 +21,9 @@ class Fraction:
             raise TypeError("The deniminator must be an integer")
 
     #Class method to simplify fractions, it works by finding the highest common factor
-
-     def hcf(x,y): #hcf = Higest common factor, given 2 number (x and y)
+    #hcf = Higest common factor, given 2 number (x and y)
         
+    def hcf(x,y):
         if y == 0:
             return(x)
         else:
@@ -114,7 +114,7 @@ class Fraction:
 
         a = Fraction.hcf(answerNumerator,answerDenominator)
 
-        return(str(int(answerNumerator/a)) + "/" + str(int(answerDenominator/a))
+        return(str(int(answerNumerator/a)) + "/" + str(int(answerDenominator/a)))
 
 
 
